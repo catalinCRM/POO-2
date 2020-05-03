@@ -11,7 +11,7 @@ public:
     agenda(const agenda &a);
     friend std::ostream& operator<<(std::ostream &o, agenda &a);
     friend std::istream& operator>>(std::istream &i, agenda &a);
-    agenda& operator=(agenda const &a);
+    agenda& operator=(const agenda &a);
     int operator[](std::string pers);
     ~agenda();
 };
